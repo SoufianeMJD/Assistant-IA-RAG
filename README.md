@@ -2,7 +2,7 @@
 
 Un chatbot RAG (Retrieval Augmented Generation) complet permettant d'uploader des documents et de discuter avec leur contenu.
 
-## 🎯 Fonctionnalités
+## Fonctionnalités
 
 - **Upload de documents** : PDF, TXT, MD
 - **Vectorisation automatique** : Documents stockés dans PostgreSQL avec pgvector
@@ -10,7 +10,7 @@ Un chatbot RAG (Retrieval Augmented Generation) complet permettant d'uploader de
 - **Filtrage par source** : Sélection des documents à utiliser comme contexte
 - **Interface moderne** : UI Vaadin responsive
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Java 17+**
 - **Spring Boot 3.2.1**
@@ -19,14 +19,14 @@ Un chatbot RAG (Retrieval Augmented Generation) complet permettant d'uploader de
 - **PostgreSQL 16** avec extension pgvector
 - **Apache Tika** (via Spring AI Tika Document Reader)
 
-## 📋 Prérequis
+## Prérequis
 
 - Java 17 ou supérieur
 - Maven 3.8+
 - Docker et Docker Compose
 - Clé API Google AI Studio (Gemini)
 
-## 🚀 Installation et Démarrage
+## Installation et Démarrage
 
 ### 1. Cloner le projet
 
@@ -35,8 +35,6 @@ cd "e:\Desktop Files\SDIA\S3\GenAI\Last Lab"
 ```
 
 ### 2. Configurer la clé API Gemini
-
-Obtenez votre clé API sur [Google AI Studio](https://aistudio.google.com/apikey)
 
 **Windows (PowerShell):**
 ```powershell
@@ -69,7 +67,7 @@ mvn clean spring-boot:run
 
 L'application sera accessible sur : **http://localhost:8080**
 
-## 📖 Utilisation
+## Utilisation
 
 ### 1. Upload de documents
 
@@ -90,7 +88,7 @@ L'application sera accessible sur : **http://localhost:8080**
 2. Appuyez sur "Send" ou Entrée
 3. L'IA répond en se basant sur les documents sélectionnés
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 src/main/java/com/example/ragchatbot/
@@ -116,7 +114,7 @@ src/main/java/com/example/ragchatbot/
 - Sélection de sources via `Select` component
 - Interface de chat avec historique stylisé
 
-## ⚙️ Configuration
+## Configuration
 
 Voir `src/main/resources/application.properties` pour :
 
@@ -131,7 +129,7 @@ Voir `src/main/resources/application.properties` pour :
 - `gemini-1.5-pro` - Plus puissant pour des tâches complexes
 - `gemini-1.0-pro` - Version stable
 
-## 🔧 Dépendances Principales
+## Dépendances Principales
 
 ```xml
 <!-- Spring AI - Google AI Gemini -->
@@ -155,37 +153,3 @@ Voir `src/main/resources/application.properties` pour :
 </dependency>
 ```
 
-## 🐛 Debugging
-
-Les logs sont activés via `SimpleLoggerAdvisor` dans le ChatService. Vérifiez la console pour :
-- Requêtes envoyées à Google AI Gemini
-- Résultats de recherche vectorielle
-- Erreurs de traitement
-
-## 📚 Ressources
-
-- [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
-- [Google AI Studio](https://aistudio.google.com/)
-- [Gemini API Documentation](https://ai.google.dev/docs)
-- [Vaadin Documentation](https://vaadin.com/docs/latest)
-- [PGVector Documentation](https://github.com/pgvector/pgvector)
-
-## 🔐 Sécurité
-
-⚠️ **Important** : Ne versionnez JAMAIS votre clé API Gemini !
-
-Ajoutez à votre `.gitignore` :
-```
-.env
-```
-
-## 📝 Notes
-
-- Le schéma de la base de données est créé automatiquement (`initialize-schema=true`)
-- Les embeddings utilisent 1536 dimensions (modèle compatible)
-- La mémoire de conversation est en RAM (`InMemoryChatMemory`)
-- Gemini 2.0 Flash offre un excellent rapport performance/prix
-
----
-
-**Développé avec ❤️ pour le cours GenAI - S3 SDIA**
