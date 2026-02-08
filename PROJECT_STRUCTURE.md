@@ -4,8 +4,6 @@
 rag-chatbot/
 ├── compose.yaml                                    # Docker Compose for PostgreSQL
 ├── pom.xml                                         # Maven dependencies
-├── README.md                                       # Documentation complète
-├── SETUP_GEMINI.md                                 # Guide de démarrage rapide
 ├── .gitignore                                      # Git exclusions
 │
 └── src/main/
