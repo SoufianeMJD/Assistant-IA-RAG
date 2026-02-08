@@ -35,27 +35,27 @@ rag-chatbot/
 ## Key Features Implemented
 
 ### Backend (ChatService)
-- ✅ Spring AI ChatClient with Google AI Gemini
-- ✅ InMemoryChatMemory for conversation history
-- ✅ QuestionAnswerAdvisor for RAG
-- ✅ Dynamic filtering by source files
-- ✅ SimpleLoggerAdvisor for debugging
+-  Spring AI ChatClient with Google AI Gemini
+-  InMemoryChatMemory for conversation history
+-  QuestionAnswerAdvisor for RAG
+-  Dynamic filtering by source files
+-  SimpleLoggerAdvisor for debugging
 
 ### Frontend (MainView)
-- ✅ Multi-file upload with Vaadin Upload component
-- ✅ TikaDocumentReader for PDF/TXT/MD parsing
-- ✅ TokenTextSplitter for chunking
-- ✅ Metadata tagging with source filename
-- ✅ Select component for file filtering
-- ✅ Styled chat interface with message history
-- ✅ Real-time UI updates
+-  Multi-file upload with Vaadin Upload component
+-  TikaDocumentReader for PDF/TXT/MD parsing
+-  TokenTextSplitter for chunking
+-  Metadata tagging with source filename
+-  Select component for file filtering
+-  Styled chat interface with message history
+-  Real-time UI updates
 
 ### Database
-- ✅ PostgreSQL 16 with pgvector extension
-- ✅ Automatic schema initialization
-- ✅ HNSW index for fast similarity search
-- ✅ COSINE_DISTANCE metric
-- ✅ 1536 dimensions (compatible embeddings)
+-  PostgreSQL 16 with pgvector extension
+-  Automatic schema initialization
+-  HNSW index for fast similarity search
+-  COSINE_DISTANCE metric
+-  1536 dimensions (compatible embeddings)
 
 ## Next Steps
 
@@ -82,12 +82,12 @@ rag-chatbot/
 
 ## Code Quality
 
-- ✅ All imports are correct and complete
-- ✅ Proper Spring Boot 3 annotations
-- ✅ Standard Maven project structure
-- ✅ Ready to compile and run
-- ✅ No placeholders or TODOs
-- ✅ Works with Gemini 2.0 Flash
+-  All imports are correct and complete
+-  Proper Spring Boot 3 annotations
+-  Standard Maven project structure
+-  Ready to compile and run
+-  No placeholders or TODOs
+-  Works with Gemini 2.0 Flash
 
 ## Current Configuration
 
